@@ -8,6 +8,6 @@ playlist = Playlist(url)
 # Itera sobre os vídeos da playlist e baixa cada um
 for video in playlist.videos:
     video_stream = video.streams.get_highest_resolution()
-    video_stream.download(output_path=r"C:\Users\leona\OneDrive\Área de Trabalho\testeplaylist")
+    video_stream.download(output_path=r"testeplaylist")
 
 print("Download concluído.")
